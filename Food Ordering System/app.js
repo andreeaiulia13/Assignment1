@@ -1,26 +1,21 @@
 const keyNameList = document.getElementsByClassName("foodName");
 const priceList = document.getElementsByClassName("price");
-const buttonList = document.getElementsByClassName("button");
-
 const noOfPortions = new Array(12);
+
 for (let i = 0; i < noOfPortions.length; i++) {
     noOfPortions[i] = 0;
 }
-
 function cartTotal() {
     let total = 0;
     for (let i = 0; i < noOfPortions.length; i++) {
         total += noOfPortions[i] * parseInt(priceList[i].textContent.replace("$", ""));
     }
     return total;
-
 }
 let element = document.getElementById("ShoppingCart");
 function appendParagraph() {
     element.innerText = "Total: $" + cartTotal();
 }
-
-
 function AddButton(i) {
     let price = priceList[i].textContent;
     let name = keyNameList[i].textContent;
@@ -32,14 +27,10 @@ function AddButton(i) {
     node.innerText = name + " " + price;
     el.appendChild(node);
     appendParagraph();
-
 }
-
 function openForm() {
     document.getElementById("myForm").style.display = "block";
-
 }
-
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
