@@ -1,0 +1,340 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    margin:0 auto 100%;
+    padding: 0;
+    overflow-x:hidden;
+    width: 100%;
+    height: 100%;
+}
+/* Header */
+#cartlogo{
+    padding: 20px 30px;
+    margin-left:20px; 
+    width: 40px;
+    background-image: url("img/cartlogo.png") ;
+    background-size: auto 100%;
+    border-radius:10%;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    background-size: cover;
+}
+#cartButton:hover{
+    background-color: #edc531;
+}
+.header{
+    
+    height: 450px;
+    background-image: url('img/header.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.logo img{
+    margin-top: 10px;
+    margin-left:30px;
+    height: 100px;
+    width: 100px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+/* Logo Text */
+#eureka {
+    color:white;
+    margin-top:0;
+    margin-left:20px;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+    font-size: 25px;
+    opacity:0.6;
+}   
+.LogoAndNav{
+
+    height: 70px;
+    margin-left: 50px;
+    margin-right: 60px;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+   
+}
+.navigation ul li{
+    display:inline-block ;
+    padding-top: 0.8em;
+    padding-left: 1em;
+   font-weight: bold;
+   color: white;
+}
+
+
+ul li:hover{
+    color:#c9cba3;
+    transition: 0.35s ease-in-out;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 10px 40px 40px 40px;
+    border-bottom: 2px solid white;
+    
+    border-radius: 50%;
+}
+.headerText{
+   
+    width: 600px;
+    margin:10px 450px ;
+    justify-content: center;
+    color: white;
+    
+    
+}
+.headerText p{
+    /* font-style: italic; */
+    font-size:40px;
+    text-align: center;
+    /* letter-spacing: 0.2em; */
+    font-family: 'Dancing Script', cursive;
+    opacity: 0.8;
+    
+}
+
+/* Shopping Cart */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+.form-container {
+    width: 320px;
+    height: 450px;;
+    padding: 10px;
+    background-color: white;
+  }
+  .form-container h2{
+      color:#b95814;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-size: xx-large;
+
+  }
+  .form-container hr{
+    opacity:0.3;
+    color:#b95814;
+  }
+  .form-container button{
+      float:right;
+      border-radius: 50%;
+      color:black;
+      background-color:white ;
+      border: 1px solid black
+  }
+
+  #ShoppingCart {
+    position: absolute;
+      color:#b95814;
+      font-size: large;
+      bottom:15px;
+      right: 130px;;
+      display: flex;
+      justify-content:center;
+  }
+
+select{
+    border: none; 
+    font-weight: bold;
+    background-color:transparent;
+    margin:10px;
+    outline: none;
+ }
+ .slider{
+     margin-top:10px;
+     
+    
+ }
+ #price{
+    font-size:15px;
+    padding-right: 8px;
+
+ }
+
+.selector{
+    font-weight: bold;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 150px;
+    background-color: #f6f7f1;
+    font-size:15px;
+    border: 1px solid #d7dabf;
+
+}
+.slider {
+    -webkit-appearance: none;
+    width: 50%;
+    height: 15px;
+    border: solid #cdd1af 1px;;
+    border-radius: 10px;  
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition:  0.2s;
+    
+  }
+ 
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: #b95814;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 24px;
+    height: 25px;
+    border-radius: 50%;
+    background: #238826;
+    cursor: pointer;
+  }
+  main{
+      margin:40px 150px;
+      display:flex;
+      justify-content: center;
+      flex-wrap:wrap;
+  }
+  /* Main Content */
+  .image{
+    text-align:center; 
+     
+ }
+.image img{
+    width:  290px;
+    height: 350px;
+    object-fit: cover; 
+    margin: 4px;
+    margin-top:20px;
+   
+ }
+
+.foodName{
+    font-weight: bold;
+    
+}
+.foodType{
+    font-size: small;
+    color:gray;
+}
+.price{
+    font-weight: bold;
+    color: #b95814;
+    font-size: small;
+}
+.image img{
+    transition: 0.8s ease-in;
+    }
+    
+.image img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.8s ease-in;
+    border-radius: 10%
+    }
+    .AddButton{
+        background: #edc531;
+      border-radius: 100px;
+      padding: 8px 12px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      margin: 0 15px;
+      border:none;
+    }
+    .AddButton:hover { 
+        transition: 0.2s ease-in;
+        background: #b95814;
+        
+      }
+/* Footer */
+ footer {
+        padding:40px 0;
+        background-color:#ffffff;
+        color:#4b4c4d;
+      
+      }
+      
+ footer ul {
+        padding:0;
+        list-style:none;
+        text-align:center;
+        font-size:18px;
+        line-height:1.6;
+        margin-bottom:0;
+       
+      }
+      
+footer li {
+        padding:0 10px;
+        display:inline;
+      }
+      
+footer ul a {
+        color:inherit;
+        text-decoration:none;
+        opacity:0.4;
+      }
+      
+footer ul a:hover {
+        opacity:1;
+        color:#926c15
+      }
+            
+footer .copyright {
+        margin-top:15px;
+        text-align:center;
+        font-size:13px;
+        color:#aaa;
+        margin-bottom:0;
+      }
+hr{
+          margin-top: 10px;
+          opacity:0.1;
+          color:#926c15;
+      }
+ /* Here I made my page a little bit responsive */
+      @media(max-width: 1100px)
+    {
+    h1{
+       visibility: hidden;
+    }
+    .headerText{
+        visibility: hidden;
+    }
+    .navigation ul {
+          display: none;
+    }
+    
+    }
+
+
+
+    
+    
+
+    
+    
