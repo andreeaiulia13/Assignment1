@@ -1,6 +1,7 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+
 body{
     margin:0 auto 100%;
     padding: 0;
@@ -9,7 +10,7 @@ body{
     height: 100%;
 }
 /* Header */
-#cartlogo{
+#cart-logo{
     padding: 20px 30px;
     margin-left:20px; 
     width: 40px;
@@ -20,7 +21,7 @@ body{
     background-size: cover;
 }
 
-#cartButton:hover{
+#cart-button:hover{
     background-color: #edc531;
 }
 
@@ -32,6 +33,7 @@ body{
     background-position: center;
     background-size: cover;
     } 
+
 .logo img{
     margin-top: 10px;
     margin-left:30px;
@@ -60,6 +62,7 @@ body{
     justify-content: space-between;
     padding: 10px 10px;   
 }
+
 .navigation ul li{
     display:inline-block ;
     padding-top: 0.8em;
@@ -67,11 +70,13 @@ body{
    font-weight: bold;
    color: white;
 }
+
 ul li:hover{
     color:#c9cba3;
     transition: 0.35s ease-in-out;
     cursor: pointer;
 }
+
 h1{
     text-align: center;
     color: white;
@@ -81,13 +86,15 @@ h1{
     border-bottom: 2px solid white;
     border-radius: 50%;
 }
-.headerText{
+
+.header-text{
     width: 600px;
     margin:10px 450px ;
     justify-content: center;
     color: white;   
 }
-.headerText p{
+
+.header-text p{
     font-size:40px;
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -102,22 +109,26 @@ h1{
     border: 3px solid #f1f1f1;
     z-index: 9;
   }
+
 .form-container {
     width: 320px;
     height: 450px;;
     padding: 10px;
     background-color: white;
   }
+
   .form-container h2{
       color:#b95814;
       text-align: center;
       font-family: 'Dancing Script', cursive;
       font-size: xx-large;
   }
+
   .form-container hr{
     opacity:0.3;
     color:#b95814;
   }
+
   .form-container button{
       float:right;
       border-radius: 50%;
@@ -126,14 +137,14 @@ h1{
       border: 1px solid black
   }
 
-  #ShoppingCart {
+#shopping-cart {
     position: absolute;
-      color:#b95814;
-      font-size: large;
-      bottom:15px;
-      right: 130px;;
-      display: flex;
-      justify-content:center;
+    color:#b95814;
+    font-size: large;
+    bottom:15px;
+    right: 130px;;
+    display: flex;
+    justify-content:center;
   }
 
 select{
@@ -143,6 +154,7 @@ select{
     margin:10px;
     outline: none;
  }
+
  .slider{
      margin-top:10px;
  }
@@ -161,6 +173,7 @@ select{
     font-size:15px;
     border: 1px solid #d7dabf;
 }
+
 .slider {
     -webkit-appearance: none;
     width: 50%;
@@ -173,7 +186,8 @@ select{
     -webkit-transition: 0.2s;
     transition:  0.2s;
   }
-  .slider::-webkit-slider-thumb {
+
+.slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 20px;
@@ -182,23 +196,26 @@ select{
     background: #b95814;
     cursor: pointer;
   }
-  .slider::-moz-range-thumb {
+
+.slider::-moz-range-thumb {
     width: 24px;
     height: 25px;
     border-radius: 50%;
     background: #238826;
     cursor: pointer;
   }
-  main{
+
+main{
       margin:40px 150px;
       display:flex;
       justify-content: center;
       flex-wrap:wrap;
-  }
+}
   /* Main Content */
-  .image{
-    text-align:center;   
+.image{
+     text-align:center;   
  }
+
 .image img{
     width:  290px;
     height: 350px;
@@ -206,21 +223,26 @@ select{
     margin: 4px;
     margin-top:20px;
  }
-.foodName{
+
+.food-name{
     font-weight: bold;
 }
-.foodType{
+
+.food-type{
     font-size: small;
     color:gray;
 }
+
 .price{
     font-weight: bold;
     color: #b95814;
     font-size: small;
 }
+
 .image img{
     transition: 0.8s ease-in;
  }
+
 .image img:hover{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -228,7 +250,8 @@ select{
     transition: 0.8s ease-in;
     border-radius: 10%
     }
-.AddButton{
+
+.add-button{
     background: #edc531;
     border-radius: 100px;
     padding: 8px 12px;
@@ -238,16 +261,19 @@ select{
     margin: 0 15px;
     border:none;
 }
-.AddButton:hover { 
+
+.add-button:hover { 
      transition: 0.2s ease-in;
      background: #b95814;
      }
+
 /* Footer */
  footer {
         padding:40px 0;
         background-color:#ffffff;
         color:#4b4c4d;
-      }    
+      }  
+
  footer ul {
         padding:0;
         list-style:none;
@@ -256,20 +282,23 @@ select{
         line-height:1.6;
         margin-bottom:0; 
       }
-      
+     
 footer li {
         padding:0 10px;
         display:inline;
-      }   
+      } 
+
 footer ul a {
         color:inherit;
         text-decoration:none;
         opacity:0.4;
       }  
+
 footer ul a:hover {
         opacity:1;
         color:#926c15
-      }           
+      }  
+
 footer .copyright {
         margin-top:15px;
         text-align:center;
@@ -277,6 +306,7 @@ footer .copyright {
         color:#aaa;
         margin-bottom:0;
       }
+
 hr{
      margin-top: 10px;
     opacity:0.1;
@@ -287,9 +317,11 @@ hr{
     h1{
        visibility: hidden;
     }
-    .headerText{
+
+    .header-text{
         visibility: hidden;
     }
+    
     .navigation ul {
           display: none;
     }

@@ -2,186 +2,184 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Delivery</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo-nav">
-            <div class="logo">
-                <img src="img/logo1.png" alt="">
-                <p id="eureka">Eureka Bistro</p>
-            </div>
-            <nav class="navigation">
-                <ul>
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>SERVICE</li>
-                    <li>CONTACTS</li>
-                    <a onclick="openForm()" id="cartlogo" href="#"></a>
-                </ul>
+  <div class="header">
+    <div class="logo-nav">
+      <div class="logo">
+        <img src="img/logo1.png" alt="">
+        <p id="eureka">Eureka Bistro</p>
+      </div>
 
-            </nav>
-            <div class="form-popup" id="myForm">
-                <form action="#" class="form-container">
-                    <button id="cartButton" onclick="closeForm()">close</button>
-                    <h2>My Order</h2>
-                    <hr>
-                    <ul id="list">
-
-                    </ul>
-                    <div id="ShoppingCart">
-                        <p>Total: $0</p>
-                    </div>
-                </form>
-            </div>
-
-
-
-        </div>
-        <div class="headerText">
-            <h1>Ordering Food</h1>
-            <p>Celerius quam asparagi cocunter</p>
-        </div>
-
-    </div>
-
-    <div class="selector">
-        <div class="selector1">
-            <select>
-                <option value="">CATEGORY</option>
-            </select>
-            <select>
-                <option value="">SORTING</option>
-            </select>
-            <select>
-                <option value="">VEGETARIAN</option>
-            </select>
-        </div>
-        <div class="selector2">
-            <label id="price" for="slider"> Price: </label>
-            $9
-            <input type="range" class="slider" name="price" min="15" max="100">
-            $50
-        </div>
-    </div>
-    <main>
-        <div class="image">
-            <img src="img/Protein Salad.jpg" alt="">
-            <div class="imageText">
-                <p class="foodName">Protein Salad</p>
-                <p class="foodType">Salads</p>
-                <p class="price">$9.00</p>
-                <a onclick="AddButton(0)" href="#" class="AddButton" id="1">ADD TO CART</a>
-
-            </div>
-
-        </div>
-        <div class="image">
-            <img src="img/Vitamin Salad.jpg" alt="">
-            <p class="foodName">Vitamin Salad</p>
-            <p class="foodType">Salads</p>
-            <p class="price">$9.00</p>
-            <a onclick="AddButton(1)" href="#" class="AddButton">ADD TO CART</a>
-        </div>
-
-        <div class="image">
-            <img src="img/Asparagus Salad.jpg" alt="">
-            <p class="foodName">Asparagus Salad</p>
-            <p class="foodType">Salads</p>
-            <p class="price">$9.00</p>
-            <a onclick="AddButton(2)" href="#" class="AddButton">ADD TO CART</a>
-        </div>
-
-        <div class="image">
-            <img src="img/Tuna Salad.jpg" alt="">
-            <p class="foodName">Tuna Salad</p>
-            <p class="foodType">Salads</p>
-            <p class="price">$12.00</p>
-            <a onclick="AddButton(3)" href="#" class="AddButton">ADD TO CART</a>
-        </div>
-
-        <div class="image">
-            <img src="img/Prosciutto and Rucola Salad.jpg " alt="">
-            <p class="foodName">Prosciutto and Rucola Salad</p>
-            <p class="foodType">Salads</p>
-            <p class="price">$12.00</p>
-            <a onclick="AddButton(4)" href="#" class="AddButton">ADD TO CART</a>
-
-        </div>
-
-        <div class="image">
-            <img src="img/Salmon with Spinach Souce.jpg" alt="">
-            <p class="foodName">Salmon with Spinach Souce</p>
-            <p class="foodType">Second Courses</p>
-            <p class="price">$28.00</p>
-            <a onclick="AddButton(5)" href="#" class="AddButton">ADD TO CART</a>
-        </div>
-        <div class="image">
-            <img src="img/Protein Box.jpg" alt="">
-            <p class="foodName">Protein Box</p>
-            <p class="foodType">Second Courses</p>
-            <p class="price">$25.00</p>
-            <a onclick="AddButton(6)" href="#" class="AddButton">ADD TO CART</a>
-        </div>
-        <div class="image">
-            <img src="img/Avocado Tacos.jpg" alt="">
-            <p class="foodName">Avocado Tacos</p>
-            <p class="foodType">Second Courses</p>
-            <p class="price">$23.00</p>
-            <a onclick="AddButton(7)" href="#" class="AddButton">ADD TO CART</a>
-        </div>
-        <div class="image">
-            <img src="img/Steak and eggs.jpg" alt="">
-            <p class="foodName">Steak and Eggs</p>
-            <p class="foodType">Second Courses</p>
-            <p class="price">$28.00</p>
-            <a onclick="AddButton(8)" href="#" class="AddButton">ADD TO CART</a>
-        </div>
-        <div class="image">
-            <img src="img/Mashed Figs.jpg" alt="">
-            <p class="foodName">Mashed Figs</p>
-            <p class="foodType">Second Courses</p>
-            <p class="price">$28.00</p>
-            <a onclick="AddButton(9)" href="#" class="AddButton">ADD TO CART</a>
-        </div>
-        <div class="image">
-            <img src="img/Strawberry Smoothie.jpg" alt="">
-            <p class="foodName">Strawberry Smoothie</p>
-            <p class="foodType">Desserts</p>
-            <p class="price">$10.00</p>
-            <a onclick="AddButton(10)" href="#" class="AddButton">ADD TO CART</a>
-        </div>
-        <div class="image">
-            <img src="img/Pancakes.jpg" alt="">
-            <p class="foodName">Strawberry Crepes</p>
-            <p class="foodType">Desserts</p>
-            <p class="price">$15.00</p>
-            <a onclick="AddButton(11)" href="#" class="AddButton">ADD TO CART</a>
-        </div>
-
-    </main>
-    <hr>
-
-    <footer>
-        <ul class="list-inline">
-            <li "><a href=" #">Home</a></li>
-            <li "><a href=" #">Services</a></li>
-            <li "><a href=" #">About</a></li>
-            <li "><a href=" #">Terms</a></li>
-            <li "><a href=" #">Privacy Policy</a></li>
+      <nav class="navigation">
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>SERVICE</li>
+          <li>CONTACTS</li>
+          <a onclick="openForm()" id="cart-logo" href="#"></a>
         </ul>
-        <p class="copyright">EurekaBistro© 2021</p>
-    </footer>
+      </nav>
 
+      <div class="form-popup" id="my-form">
+        <form action="#" class="form-container">
+          <button id="cart-button" onclick="closeForm()">close</button>
+          <h2>My Order</h2>
+          <hr>
+          <ul id="cart-list">
+          </ul>
+          <div id="shopping-cart">
+            <p>Total: $0</p>
+          </div>
+        </form>
+      </div>
+    </div>
 
+    <div class="header-text">
+      <h1>Ordering Food</h1>
+      <p>Celerius quam asparagi cocunter</p>
+    </div>
+  </div>
+  <div class="selector">
+    <div>
+      <select>
+        <option value="">CATEGORY</option>
+      </select>
+      <select>
+        <option value="">SORTING</option>
+      </select>
+      <select>
+        <option value="">VEGETARIAN</option>
+      </select>
+    </div>
+
+    <div>
+      <label id="price" for="slider"> Price: </label>
+      $9
+      <input type="range" class="slider" name="price" min="15" max="100">
+      $50
+    </div>
+  </div>
+
+  <main>
+    <div class="image">
+      <img src="img/Protein Salad.jpg" alt="">
+      <div class="imageText">
+        <p class="food-name">Protein Salad</p>
+        <p class="food-type">Salads</p>
+        <p class="price">$9.00</p>
+        <a onclick="addButton(0)" href="#" class="add-button" id="1">ADD TO CART</a>
+      </div>
+    </div>
+
+    <div class="image">
+      <img src="img/Vitamin Salad.jpg" alt="">
+      <p class="food-name">Vitamin Salad</p>
+      <p class="food-type">Salads</p>
+      <p class="price">$9.00</p>
+      <a onclick="addButton(1)" href="#" class="add-button">ADD TO CART</a>
+    </div>
+
+    <div class="image">
+      <img src="img/Asparagus Salad.jpg" alt="">
+      <p class="food-name">Asparagus Salad</p>
+      <p class="food-type">Salads</p>
+      <p class="price">$9.00</p>
+      <a onclick="addButton(2)" href="#" class="add-button">ADD TO CART</a>
+    </div>
+
+    <div class="image">
+      <img src="img/Tuna Salad.jpg" alt="">
+      <p class="food-name">Tuna Salad</p>
+      <p class="food-type">Salads</p>
+      <p class="price">$12.00</p>
+      <a onclick="addButton(3)" href="#" class="add-button">ADD TO CART</a>
+    </div>
+
+    <div class="image">
+      <img src="img/Prosciutto and Rucola Salad.jpg " alt="">
+      <p class="food-name">Prosciutto and Rucola Salad</p>
+      <p class="food -type">Salads</p>
+      <p class="price">$12.00</p>
+      <a onclick="addButton(4)" href="#" class="add-button">ADD TO CART</a>
+    </div>
+
+    <div class="image">
+      <img src="img/Salmon with Spinach Souce.jpg" alt="">
+      <p class="food-name">Salmon with Spinach Souce</p>
+      <p class="food-type">Second Courses</p>
+      <p class="price">$28.00</p>
+      <a onclick="addButton(5)" href="#" class="add-button">ADD TO CART</a>
+    </div>
+
+    <div class="image">
+      <img src="img/Protein Box.jpg" alt="">
+      <p class="food-name">Protein Box</p>
+      <p class="food-type">Second Courses</p>
+      <p class="price">$25.00</p>
+      <a onclick="addButton(6)" href="#" class="add-button">ADD TO CART</a>
+    </div>
+
+    <div class="image">
+      <img src="img/Avocado Tacos.jpg" alt="">
+      <p class="food-name">Avocado Tacos</p>
+      <p class="food-type">Second Courses</p>
+      <p class="price">$23.00</p>
+      <a onclick="addButton(7)" href="#" class="add-button">ADD TO CART</a>
+    </div>
+
+    <div class="image">
+      <img src="img/Steak and eggs.jpg" alt="">
+      <p class="food-name">Steak and Eggs</p>
+      <p class="food-type">Second Courses</p>
+      <p class="price">$28.00</p>
+      <a onclick="addButton(8)" href="#" class="add-button">ADD TO CART</a>
+    </div>
+
+    <div class="image">
+      <img src="img/Mashed Figs.jpg" alt="">
+      <p class="food-name">Mashed Figs</p>
+      <p class="food-type">Second Courses</p>
+      <p class="price">$28.00</p>
+      <a onclick="addButton(9)" href="#" class="add-button">ADD TO CART</a>
+    </div>
+
+    <div class="image">
+      <img src="img/Strawberry Smoothie.jpg" alt="">
+      <p class="food-name">Strawberry Smoothie</p>
+      <p class="food-type">Desserts</p>
+      <p class="price">$10.00</p>
+      <a onclick="addButton(10)" href="#" class="add-button">ADD TO CART</a>
+    </div>
+
+    <div class="image">
+      <img src="img/Pancakes.jpg" alt="">
+      <p class="food-name">Strawberry Crepes</p>
+      <p class="food-type">Desserts</p>
+      <p class="price">$15.00</p>
+      <a onclick="addButton(11)" href="#" class="add-button">ADD TO CART</a>
+    </div>
+  </main>
+  <hr>
+
+  <footer>
+    <ul class="list-inline">
+      <li "><a href=" #">Home</a></li>
+      <li "><a href=" #">Services</a></li>
+      <li "><a href=" #">About</a></li>
+      <li "><a href=" #">Terms</a></li>
+      <li "><a href=" #">Privacy Policy</a></li>
+    </ul>
+    <p class="copyright">EurekaBistro© 2021</p>
+  </footer>
 </body>
 <script type="text/javascript" src="app.js"></script>
 

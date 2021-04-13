@@ -1,37 +1,49 @@
-const keyNameList = document.getElementsByClassName("foodName");
+const keyNameList = document.getElementsByClassName("food-name");
 const priceList = document.getElementsByClassName("price");
 const noOfPortions = new Array(12);
 
 for (let i = 0; i < noOfPortions.length; i++) {
-    noOfPortions[i] = 0;
+  noOfPortions[i] = 0;
 }
+
 function cartTotal() {
-    let total = 0;
-    for (let i = 0; i < noOfPortions.length; i++) {
-        total += noOfPortions[i] * parseInt(priceList[i].textContent.replace("$", ""));
-    }
-    return total;
+  let total = 0;
+  for (let i = 0; i < noOfPortions.length; i++) {
+    total += noOfPortions[i] * parseInt(priceList[i].textContent.replace("$", ""));
+  }
+  return total;
 }
-let element = document.getElementById("ShoppingCart");
-function appendParagraph() {
-    element.innerText = "Total: $" + cartTotal();
+
+let element = document.getElementById("shopping-cart");
+
+function updateTotal() {
+  element.innerText = "Total: $" + cartTotal();
 }
-function AddButton(i) {
-    let price = priceList[i].textContent;
-    let name = keyNameList[i].textContent;
-    localStorage.setItem(name, price);
-    noOfPortions[i]++;
-    window.alert("You just added to the cart one portion of " + name + " (" + price + ")." + "\r\n" + " Your total is: $" + cartTotal());
-    let el = document.getElementById('list');
-    let node = document.createElement("li");
-    node.innerText = name + " " + price;
-    el.appendChild(node);
-    appendParagraph();
+
+function addButton(i) {
+  let price = priceList[i].textContent;
+  let name = keyNameList[i].textContent;
+
+  localStorage.setItem(name, price);
+  noOfPortions[i]++;
+  window.alert("You just added to the cart one portion of " + name + " (" + price + ")." + "\r\n" + " Your total is: $" + cartTotal());
+  printInShoppingCart(name, price);
 }
+
+function printInShoppingCart(name, price) {
+  let el = document.getElementById('cart-list');
+  let node = document.createElement("li");
+
+  node.innerText = name + " " + price;
+  el.appendChild(node);
+  updateTotal();
+}
+
 function openForm() {
-    document.getElementById("myForm").style.display = "block";
+  document.getElementById("my-form").style.display = "block";
 }
+
 function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+  document.getElementById("my-form").style.display = "none";
 }
 
