@@ -15,7 +15,7 @@
   <div class="header">
     <div class="logo-nav">
       <div class="logo">
-        <img src="img/logo1.png" alt="">
+        <img src="img/logo1.png" alt="Eureka logo">
         <p id="eureka">Eureka Bistro</p>
       </div>
 
@@ -33,10 +33,10 @@
         <form action="#" class="form-container">
           <button id="cart-button" onclick="closeForm()">close</button>
           <h2>My Order</h2>
-          <hr>
+          <hr class="footer-cart-hr">
           <ul id="cart-list">
           </ul>
-          <div id="shopping-cart">
+          <div id="total-shopping-cart">
             <p>Total: $0</p>
           </div>
         </form>
@@ -51,134 +51,132 @@
   <div class="selector">
     <div>
       <select>
-        <option value="">CATEGORY</option>
+        <option value="category">CATEGORY</option>
       </select>
       <select>
-        <option value="">SORTING</option>
+        <option value="sorting">SORTING</option>
       </select>
       <select>
-        <option value="">VEGETARIAN</option>
+        <option value="vegetarian">VEGETARIAN</option>
       </select>
     </div>
 
     <div>
-      <label id="price" for="slider"> Price: </label>
+      <label class="slider-price" for="slider"> Price: </label>
       $9
       <input type="range" class="slider" name="price" min="15" max="100">
       $50
     </div>
   </div>
 
-  <main>
+  <main class="products-main">
     <div class="image">
-      <img src="img/Protein Salad.jpg" alt="">
-      <div class="imageText">
-        <p class="food-name">Protein Salad</p>
-        <p class="food-type">Salads</p>
-        <p class="price">$9.00</p>
-        <a onclick="addButton(0)" href="#" class="add-button" id="1">ADD TO CART</a>
-      </div>
+      <img src="img/Protein Salad.jpg" alt="Protein salad">
+      <p class="food-name">Protein Salad</p>
+      <p class="food-type">Salads</p>
+      <p class="food-price">$9.00</p>
+      <a onclick="addButton(0)" href="#" class="add-button" id="1">ADD TO CART</a>
     </div>
 
     <div class="image">
-      <img src="img/Vitamin Salad.jpg" alt="">
+      <img src="img/Vitamin Salad.jpg" alt="Vitamin salad">
       <p class="food-name">Vitamin Salad</p>
       <p class="food-type">Salads</p>
-      <p class="price">$9.00</p>
+      <p class="food-price">$9.00</p>
       <a onclick="addButton(1)" href="#" class="add-button">ADD TO CART</a>
     </div>
 
     <div class="image">
-      <img src="img/Asparagus Salad.jpg" alt="">
+      <img src="img/Asparagus Salad.jpg" alt="Asparagus salad">
       <p class="food-name">Asparagus Salad</p>
       <p class="food-type">Salads</p>
-      <p class="price">$9.00</p>
+      <p class="food-price">$9.00</p>
       <a onclick="addButton(2)" href="#" class="add-button">ADD TO CART</a>
     </div>
 
     <div class="image">
-      <img src="img/Tuna Salad.jpg" alt="">
+      <img src="img/Tuna Salad.jpg" alt="Tuna salad">
       <p class="food-name">Tuna Salad</p>
       <p class="food-type">Salads</p>
-      <p class="price">$12.00</p>
+      <p class="food-price">$12.00</p>
       <a onclick="addButton(3)" href="#" class="add-button">ADD TO CART</a>
     </div>
 
     <div class="image">
-      <img src="img/Prosciutto and Rucola Salad.jpg " alt="">
+      <img src="img/Prosciutto and Rucola Salad.jpg " alt="Prosciutto and rucola salad">
       <p class="food-name">Prosciutto and Rucola Salad</p>
       <p class="food -type">Salads</p>
-      <p class="price">$12.00</p>
+      <p class="food-price">$12.00</p>
       <a onclick="addButton(4)" href="#" class="add-button">ADD TO CART</a>
     </div>
 
     <div class="image">
-      <img src="img/Salmon with Spinach Souce.jpg" alt="">
+      <img src="img/Salmon with Spinach Souce.jpg" alt="Salmon with spinach souce">
       <p class="food-name">Salmon with Spinach Souce</p>
       <p class="food-type">Second Courses</p>
-      <p class="price">$28.00</p>
+      <p class="food-price">$28.00</p>
       <a onclick="addButton(5)" href="#" class="add-button">ADD TO CART</a>
     </div>
 
     <div class="image">
-      <img src="img/Protein Box.jpg" alt="">
+      <img src="img/Protein Box.jpg" alt="Protein box">
       <p class="food-name">Protein Box</p>
       <p class="food-type">Second Courses</p>
-      <p class="price">$25.00</p>
+      <p class="food-price">$25.00</p>
       <a onclick="addButton(6)" href="#" class="add-button">ADD TO CART</a>
     </div>
 
     <div class="image">
-      <img src="img/Avocado Tacos.jpg" alt="">
+      <img src="img/Avocado Tacos.jpg" alt="Avocado tacos">
       <p class="food-name">Avocado Tacos</p>
       <p class="food-type">Second Courses</p>
-      <p class="price">$23.00</p>
+      <p class="food-price">$23.00</p>
       <a onclick="addButton(7)" href="#" class="add-button">ADD TO CART</a>
     </div>
 
     <div class="image">
-      <img src="img/Steak and eggs.jpg" alt="">
+      <img src="img/Steak and eggs.jpg" alt="Steak with eggs">
       <p class="food-name">Steak and Eggs</p>
       <p class="food-type">Second Courses</p>
-      <p class="price">$28.00</p>
+      <p class="food-price">$28.00</p>
       <a onclick="addButton(8)" href="#" class="add-button">ADD TO CART</a>
     </div>
 
     <div class="image">
-      <img src="img/Mashed Figs.jpg" alt="">
+      <img src="img/Mashed Figs.jpg" alt="Mashed figs">
       <p class="food-name">Mashed Figs</p>
       <p class="food-type">Second Courses</p>
-      <p class="price">$28.00</p>
+      <p class="food-price">$28.00</p>
       <a onclick="addButton(9)" href="#" class="add-button">ADD TO CART</a>
     </div>
 
     <div class="image">
-      <img src="img/Strawberry Smoothie.jpg" alt="">
+      <img src="img/Strawberry Smoothie.jpg" alt="Strawberry smoothie">
       <p class="food-name">Strawberry Smoothie</p>
       <p class="food-type">Desserts</p>
-      <p class="price">$10.00</p>
+      <p class="food-price">$10.00</p>
       <a onclick="addButton(10)" href="#" class="add-button">ADD TO CART</a>
     </div>
 
     <div class="image">
-      <img src="img/Pancakes.jpg" alt="">
+      <img src="img/Pancakes.jpg" alt="Strawberry crepes">
       <p class="food-name">Strawberry Crepes</p>
       <p class="food-type">Desserts</p>
-      <p class="price">$15.00</p>
+      <p class="food-price">$15.00</p>
       <a onclick="addButton(11)" href="#" class="add-button">ADD TO CART</a>
     </div>
   </main>
-  <hr>
+  <hr class="footer-cart-hr">
 
-  <footer>
+  <footer class="main-footer">
     <ul class="list-inline">
-      <li "><a href=" #">Home</a></li>
-      <li "><a href=" #">Services</a></li>
-      <li "><a href=" #">About</a></li>
-      <li "><a href=" #">Terms</a></li>
-      <li "><a href=" #">Privacy Policy</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Privacy Policy</a></li>
     </ul>
-    <p class="copyright">EurekaBistro© 2021</p>
+    <p class="copy-right">EurekaBistro© 2021</p>
   </footer>
 </body>
 <script type="text/javascript" src="app.js"></script>

@@ -1,5 +1,5 @@
 const keyNameList = document.getElementsByClassName("food-name");
-const priceList = document.getElementsByClassName("price");
+const priceList = document.getElementsByClassName("food-price");
 const noOfPortions = new Array(12);
 
 for (let i = 0; i < noOfPortions.length; i++) {
@@ -14,8 +14,7 @@ function cartTotal() {
   return total;
 }
 
-let element = document.getElementById("shopping-cart");
-
+let element = document.getElementById("total-shopping-cart");
 function updateTotal() {
   element.innerText = "Total: $" + cartTotal();
 }
